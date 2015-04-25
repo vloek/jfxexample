@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="59.0" prefWidth="450.0">
+         <children>
+            <TextField layoutX="151.0" layoutY="7.0" fx:id="searchField" onAction="#loadPage" promptText="Поиск..." AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <WebView fx:id="webView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="450.0" VBox.vgrow="ALWAYS" />
+      <ToolBar layoutY="1.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="439.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+   </children>
+</VBox>
